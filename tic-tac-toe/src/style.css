@@ -1,0 +1,19 @@
+.block {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+}
+
+.board {
+    margin: 10px;
+}

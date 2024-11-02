@@ -1,7 +1,7 @@
 import React from 'react';
 import Todo from './components/Todo/Todo';
 import Counter from './components/Counter/Counter';
-
+import { useState } from 'react';
 const myTodoItems=[
   {
     id:1,
@@ -13,10 +13,12 @@ const myTodoItems=[
 ]
 
 const App: React.FC=()=> {
+  const [visible,isVisible]=useState<boolean>(true)
   return (
     <div>
         <Todo item={myTodoItems}/>
-        <Counter/>
+        {visible?<Counter/>:""}
+        <button onClick={()=>isVisible(!visible)}>Click me</button>
       </div>
   );
 }
