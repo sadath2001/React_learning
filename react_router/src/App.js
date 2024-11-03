@@ -1,8 +1,10 @@
-import React from 'react';
 
 function App() {
+
   return (
-    <h1>jhbadhjad</h1>
+      <div>
+        <h1>hi</h1>
+      </div>
   );
 }
 
